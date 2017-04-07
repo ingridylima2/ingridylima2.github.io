@@ -1,0 +1,43 @@
+header{
+	background: darkblue;
+	padding: 1em;
+	}
+	h1{
+    color: #7fffda;
+    text-align: center;
+    font-family: "Arial";
+  }
+  h2{
+    color: #ff1496;
+    font-family: "Arial";
+    text-align: center;
+    background: #54ff9f
+  }
+  body{
+    background-color: lightblue;
+  }
+  p{
+    font-family: "Arial";
+    text-align: justify;
+  }
+  li{
+    color: darkblue;
+    font-family: "Arial"
+  }
+  b{
+    color:black;
+    font-family: serif;
+    font-size: 20;
+  }
+  img{
+    float:center;
+    }
+	table {width:70%;}
+table,td {border: 1px solid black; border-collapse: collapse;}
+td {padding: 5px; text-align: left;}
+table#t01 tr:nth-child(even) {background-color: darkblue; color:#7fffda;}
+table#t01 tr:nth-child(odd) {background-color:#7fffda; color: darkblue;}
+	    footer{background-color:darkblue;
+		    padding:1em;
+	    }
+	    h3{color:#7fffda;}
