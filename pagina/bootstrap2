@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ingridy Lima</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+  <style>
+  .container-fluid {
+     background-color: Thistle;
+      padding-top: 70px;
+      padding-bottom: 70px;
+  .bg-4 {  
+   padding-top: 70px;
+      padding-bottom: 70px;
+    background-color: Thistle;
+    color: #ffffff;
+}
+    .jumbotron{
+      color: Thistle;
+      background-image: url(https://static.tumblr.com/04dc58011f70384bcf5fa83cfcae3941/xyaenfp/u52nk3tnp/tumblr_static_tumblr_static_1q4k064euvfos4ko040cw8oc4_640.jpg);
+    }
+    body{
+      background-color: Thistle;
+	  }
+	  .sobre {
+		font-family: "Quattrocento Sans";
+		font-size: 48px;
+		font-style: normal;
+		}
+		bg-1 { 
+      background-color: Thistle;
+      
+  }
+	  
+	  h3 {
+		font-family: "Crimson Text";
+		font-size: 25px;
+		font-style: normal;
+	  }
+	  .l {
+		font-family: "Paytone One";
+		font-size: 24px;
+		font-style: normal;
+	  }
+	  
+	.dados {
+		  font-size: 20px;
+		  }
+	.f {
+		font-family: Damion;
+		font-size: 24px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		line-height: 26.4px;
+	}
+	    
+	 .nav {
+	  background-color: Thistle;
+	  }
+	  
+	  
+  </style>
+      <body>
+	  <nav class="navbar navbar-default">
+  <div class="container-fluid bg-1 text-center">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">WHO</a></li>
+        <li><a href="#">WHAT</a></li>
+        <li><a href="#">WHERE</a></li>
+      </ul>
+    </div>
+<div class="jumbotron text-center"> 
+  <center><h1 style="font-family: Aclonica;"> Ingridy Lima</h1></center>
+ <center><img src=" https://scontent.fvix2-1.fna.fbcdn.net/v/t1.0-9/13731704_838926349575510_4446862958648514927_n.jpg?oh=1278323584695d0725cac0bec7dc73fc&oe=599BA304" class="img-responsive" class="img-rounded" alt="perfil" width="300" height="auto"></center> 
+</div>
+        <center><h2  class="sobre" style="font-family: Quattrocento Sans;">Sobre mim:</h2></center>
+  <div class="container">
+  
+<div class="row">
+  <div class="col-sm-4">
+	<p><h3>Dados Gerais <span class="glyphicon glyphicon-collapse-down dados"></span></h3></p>  
+	 <h4><span class="glyphicon glyphicon-fire dados">Nome: Ingridy lima</span></h4>   
+	<p><h4><span class="glyphicon glyphicon-fire dados">Idade: 15 anos</span></h4></p> 
+		<p><h4><span class="glyphicon glyphicon-fire dados">Escola:     IFES (Instituto Federal Do Espírito Santo)</span></h4></p> 
+	</div>
+  <div class="col-sm-8">
+	<center><h3>Contatos <span class="glyphicon glyphicon-collapse-down dados"></span></h3> 
+	<p><a href="https://www.facebook.com/ingridy.lima.7" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-globe"></span> Facebook 
+        </a></p>
+		<a href="https://twitter.com/ingridyy_lima" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-globe"></span> Twitter </center>
+        </a>
+		<footer class="container-fluid bg-4 text-center">
+  <p>copyright:Ingridy Lima</a></p> 
+</footer>
+</div>
+
+
+</div>
+
+</div>
+
+</body>
