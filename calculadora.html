@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>calculadora</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <style>
+    .calc {
+  width: 250px;
+  height: auto;
+  margin-top: 70px;
+  text-align:center;
+  padding: 30px 10px;
+  box-shadow: 1px 1px 25px #888;
+}
+
+.btn {
+  font-size: 15px;
+  width: 40px;
+  height: 30px;
+  background-color: #f0f0f5;
+  border: 0;
+  margin: 5px 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #c5c5c5;
+}
+
+.output {
+  text-align: right;
+  margin-bottom: 30px;
+  background-color: #8da088;
+  height: 45px;
+  padding: 0px 5px;
+  width: 200px;
+  border: 0;
+  font-size: 30px;
+}
+</style>
+  </head>
+    <script >
+    var op = '';
+var res = 0;
+var num1 = -1;
+var num2 = 0;
+var visor = 0;    
+var res = 0;
+
+function clicarNum(num){
+	visor = document.getElementById('visor').value = document.getElementById('visor').value + num;
+}
+  
+function clicarOp(operacao){
+  op = operacao;
+  if(num1 != res){
+	  num1 = parseInt(visor);
+  }
+	Limpa();
+}
+  
+function CalcResultado(){
+  num2 = parseInt(visor);
+  
+  if (document.getElementById('visor').value === ''){
+  } else {
+    
+	if (op == "+") {
+    res = num1 + num2;
+  } else {
+    
+  if (op == "-") {
+  res = num1 - num2;
+  } else {
+    
+  if (op == "*") {
+  res = num1 * num2;
+  } else {
+    
+  res = num1 / num2;
+  
+  }}}}
+  
+  Limpa()
+  document.getElementById('visor').value = res;
+  num1 = res;
+  num2 = '';
+}
+
+function Limpa() {
+	document.getElementById('visor').value = '';
+}
+    </script>
+    <body>
+    <center>
+    <div class="calc">
+      
+      <input type="text" class="output" id="visor" name="visor" disabled/>
+      
+      <input type="button" class="btn" value="7" id="7" onclick="clicarNum(value)"/>
+      <input type="button" class="btn" value="8" id="8" onclick="clicarNum(value)"/>
+      <input type="button" class="btn" value="9" id="9" onclick="clicarNum(value)"/>
+      <input type="button" class="btn" value="/" style="background-color: #a5c7ff;" id="/" onclick="clicarOp(value)"/>
+      <input type="button" class="btn" value="4" id="4" onclick="clicarNum(value)"/>
+      <input type="button" class="btn" value="5" id="5" onclick="clicarNum(value)"/>
+      <input type="button" class="btn" value="6" id="6" onclick="clicarNum(value)"/>
+      <input type="button" class="btn" value="*" style="background-color: #a5c7ff;" id="*" onclick="clicarOp(value)"/>
+      <input type="button" class="btn" value="1" id="1" onclick="clicarNum(value)"/>
+      <input type="button" class="btn" value="2" id="2" onclick="clicarNum(value)"/>
+      <input type="button" class="btn" value="3" id="3" onclick="clicarNum(value)"/>
+      <input type="button" class="btn" value="+" style="background-color: #a5c7ff;" id="+" onclick="clicarOp(value)"/>
+      <input type="button" class="btn" value="CE" style="background-color: #ff9696;" id="CE" onclick="Limpa()"/>
+      <input type="button" class="btn" value="0" id="0" onclick="clicarNum(value)"/>
+      <input type="button" class="btn" value="=" style="background-color: #ffdba4;" id="=" onclick="CalcResultado()"/>
+      <input type="button" class="btn" value="-" style="background-color: #a5c7ff;" id="-" onclick="clicarOp(value)"/>
+    </div>
+    </center>
+  </body>
+</html>
