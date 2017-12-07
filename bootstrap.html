@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,52 +9,133 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
   <style>
-    .jumbotron{
+	   .jumbotron{
       color: Thistle;
       background-image: url(https://static.tumblr.com/04dc58011f70384bcf5fa83cfcae3941/xyaenfp/u52nk3tnp/tumblr_static_tumblr_static_1q4k064euvfos4ko040cw8oc4_640.jpg);
     }
+  .container-fluid {
+     background-color: Thistle;
+      padding-top: 70px;
+      padding-bottom: 70px;
+  .bg-4 {  
+   padding-top: 70px;
+      padding-bottom: 70px;
+    background-color: Thistle;
+    color: #ffffff;
+}
+   
     body{
       background-color: Thistle;
 	  }
-	  h2 {
-	font-family: "Quattrocento Sans";
-	font-size: 44px;
-	font-style: normal;
-	color: Dark Slate Blue;
-	  }
+	  .sobre {
+		font-family: "Quattrocento Sans";
+		font-size: 48px;
+		font-style: normal;
+		}
+		bg-1 { 
+      background-color: Thistle;
+      
+  }
+	  
 	  h3 {
-	font-family: "Crimson Text";
-	font-size: 24px;
-	font-style: normal;
+		font-family: "Crimson Text";
+		font-size: 25px;
+		font-style: normal;
 	  }
-	  h4 {
-	font-family: "Paytone One";
-	font-size: 24px;
-	font-style: normal;
+	  .l {
+		font-family: "Paytone One";
+		font-size: 24px;
+		font-style: normal;
 	  }
 	  
-	  .dados {
-		  font-size: 25px;
-	  
-		  
+	.dados {
+		  font-size: 20px;
+		  }
+	.f {
+		font-family: Damion;
+		font-size: 24px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		line-height: 26.4px;
+	}
+	    
+	 .nav {
+	  background-color: Thistle;
+		 font-family: Damion;
+		 font-size: 20px;
 	  }
+	  
 	  
   </style>
       <body>
-
+	  <nav class="navbar navbar-default">
+  <div class="container-fluid bg-1 text-center">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Início</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sobre mim:</a></li>
+        <li><a href="#">Contatos:</a></li>
+	    </ul>
+    </div>
 <div class="jumbotron text-center"> 
   <center><h1 style="font-family: Aclonica;"> Ingridy Lima</h1></center>
- <center><img src=" https://scontent.fvix2-1.fna.fbcdn.net/v/t1.0-9/13731704_838926349575510_4446862958648514927_n.jpg?oh=1278323584695d0725cac0bec7dc73fc&oe=599BA304" class="img-rounded" alt="perfil" width="300" height="auto"></center> 
+ <center><img src="https://scontent.frec10-1.fna.fbcdn.net/v/t1.0-9/13731704_838926349575510_4446862958648514927_n.jpg?oh=c632837d2258ab797aa409794146485b&oe=5A88F104" class="img-responsive" class="img-rounded" alt="perfil" width="300" height="auto"></center> 
 </div>
-        <center><h2 style="font-family: Quattrocento Sans;">Sobre mim:</h2></center>
+        <center><h2  class="sobre" style="font-family: Quattrocento Sans;">Sobre mim:</h2></center>
+	  <p font-family:Damion; font-size:20px> "O essencial é invisível para os olhos"</p>
   <div class="container">
+  
 <div class="row">
-  <div class="col-sm-4">
-	<p><h3>Dados Gerais <span class="glyphicon glyphicon-collapse-down dados"></span></h3></p>  
-	<br>
-	 <p><h4><span class="glyphicon glyphicon-fire"> Nome:</h4></span></p>  
-  <div class="col-sm-8">
-	<h3>Curiosidades:</h3>
+  <div ><br>
+	<p ><h3>Dados Gerais <span class="glyphicon glyphicon-collapse-down dados"></span></h3></p>  
+	<p><h4><span class="glyphicon glyphicon-fire dados">Nome: Ingridy lima</span></h4></p>   
+	<p><h4><span class="glyphicon glyphicon-fire dados">Idade: 15 anos</span></h4></p> 
+		<p><h4><span class="glyphicon glyphicon-fire dados">Escola:IFES (Instituto Federal Do Espírito Santo)</span></h4></p> 
+		  </br>
+		  </div>
+  <div >
+	<center><h3>Contatos <span class="glyphicon glyphicon-collapse-down dados"></span></h3> 
+	<p><a href="https://www.facebook.com/ingridy.lima.7" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-globe"></span> Facebook 
+        </a></p>
+		<a href="https://twitter.com/ingridyy_lima" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-globe"></span> Twitter </center>
+        </a>
+	<!-- Footer -->
+<footer background-color:"#7f545" class="container-fluid bg-4 text-center">Copyright  © Ingridy lima</footer>
 </div>
+	<div id="contato" class="container-fluid">
+ 	<div class="row">
+    <div class="col-sm-7">
+	<h3>Contato</h3>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nome" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="E-mail" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Fale sobre" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  
+
+
+</div>
+
+</div>
+
 </body>
-</html>
