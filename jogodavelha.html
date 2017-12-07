@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jogo da velha</title>
+  </head>
+  <body>
+    <script src="index.js">
+    var vez = 1;
+function apaga() {
+		var quadrado1 = document.getElementById("1");
+		var quadrado2 = document.getElementById("2");
+		var quadrado3 = document.getElementById("3");
+		var quadrado4 = document.getElementById("4");
+		var quadrado5 = document.getElementById("5");
+		var quadrado6 = document.getElementById("6");
+		var quadrado7 = document.getElementById("7");
+		var quadrado8 = document.getElementById("8");
+		var quadrado9 = document.getElementById("9");
+		quadrado1.value = "";
+		quadrado2.value = "";
+		quadrado3.value = "";
+		quadrado4.value = "";
+		quadrado5.value = "";
+		quadrado6.value = "";
+		quadrado7.value = "";
+		quadrado8.value = "";
+		quadrado9.value = "";
+		document.getElementById("O").disabled = false;
+		document.getElementById("X").disabled = false;
+		vez = 1;
+	}
+		
+function bloco(bloco) {
+  var selbloco = document.getElementById(bloco);
+
+  if ((selbloco.value != "O") && (selbloco.value !="X")) {
+		if (vez % 2 !== 0) {
+			selbloco.value = "X";
+		  document.getElementById("O").disabled = false;
+			document.getElementById("X").disabled = true;
+			vez = vez + 1;
+		} else {
+			selbloco.value = "O"
+			document.getElementById("X").disabled = false;
+			document.getElementById("O").disabled = true;
+			vez = vez + 1;
+		}
+	}
+}
+     
+function checa() {
+  var quadrado1 = document.getElementById("1");
+	var quadrado2 = document.getElementById("2");
+	var quadrado3 = document.getElementById("3");
+  var quadrado4 = document.getElementById("4");
+  var quadrado5 = document.getElementById("5");
+  var quadrado6 = document.getElementById("6");
+  var quadrado7 = document.getElementById("7");
+  var quadrado8 = document.getElementById("8");
+  var quadrado9 = document.getElementById("9");	
+  var X = document.getElementById("X");
+  var O = document.getElementById("O");
+  
+  
+  if  (((quadrado1.value == "X") && (quadrado2.value == "X") && (quadrado3.value == "X"))  || 
+       ((quadrado4.value == "X") && (quadrado5.value == "X") && (quadrado6.value == "X"))  ||
+       ((quadrado7.value == "X") && (quadrado8.value == "X") && (quadrado9.value == "X"))  ||
+    
+       ((quadrado3.value == "X") && (quadrado5.value == "X") && (quadrado7.value == "X"))  ||
+       ((quadrado1.value == "X") && (quadrado5.value == "X") && (quadrado9.value == "X"))  ||
+       
+       ((quadrado1.value == "X") && (quadrado4.value == "X") && (quadrado7.value == "X"))  || 
+       ((quadrado2.value == "X") && (quadrado5.value == "X") && (quadrado8.value == "X"))  ||
+       ((quadrado3.value == "X") && (quadrado6.value == "X") && (quadrado9.value == "X")))
+    {
+      if (X.value !== "") {
+			alert(X.value + " Ganhou");
+      }
+			else {
+			alert("Player X Ganhou");
+      } 
+    }
+
+  else if  
+      (((quadrado1.value == "O") && (quadrado2.value == "O") && (quadrado3.value == "O"))  ||
+       ((quadrado4.value == "O") && (quadrado5.value == "O") && (quadrado6.value == "O"))  ||
+       ((quadrado7.value == "O") && (quadrado8.value == "O") && (quadrado9.value == "O"))  ||
+    
+       ((quadrado3.value == "O") && (quadrado5.value == "O") && (quadrado7.value == "O"))  ||
+       ((quadrado1.value == "O") && (quadrado5.value == "O") && (quadrado9.value == "O"))  ||
+    
+       ((quadrado1.value == "O") && (quadrado4.value == "O") && (quadrado7.value == "O"))  ||
+       ((quadrado2.value == "O") && (quadrado5.value == "O") && (quadrado8.value == "O"))  ||
+       ((quadrado3.value == "O") && (quadrado6.value == "O") && (quadrado9.value == "O")))
+    {
+      if (O.value !== "") {
+			alert(O.value + " Ganhou");
+      }
+			else {
+			alert("Player O Ganhou!");
+      }
+    }
+    else if (vez == 10) {
+			alert("Deu velha!");
+    }
+}
+  
+    </script>
+      <center>
+        <h1 style="font-family: Verdana;color: #fe5f55">Jogo da Velha</h1>
+        <table class="parte1" style="align:center;">
+          <tr>
+            <th><input value="" style="background-color: #ffffff;border: 0;box-shadow: 1px 1px 10px #888888;width: 70px;height: 70px;font-size: 30px;margin: 5px;color: #fe5f55;" type="button" id="1" onclick="bloco(1);checa()"></th>
+            <th><input value="" style="background-color: #ffffff;border: 0;box-shadow: 1px 1px 10px #888888;width: 70px;height: 70px;font-size: 30px;margin: 5px;color: #fe5f55;" type="button" id="2" onclick="bloco(2);checa()"></th>
+            <th><input value="" style="background-color: #ffffff;border: 0;box-shadow: 1px 1px 10px #888888;width: 70px;height: 70px;font-size: 30px;margin: 5px;color: #fe5f55;" type="button" id="3" onclick="bloco(3);checa()"></th>
+          </tr>
+          
+          <tr>
+            <th><input value="" style="background-color: #ffffff;border: 0;box-shadow: 1px 1px 10px #888888;width: 70px;height: 70px;font-size: 30px;margin: 5px;color: #fe5f55;" type="button" id="4" onclick="bloco(4);checa()"></th>
+            <th><input value="" style="background-color: #ffffff;border: 0;box-shadow: 1px 1px 10px #888888;width: 70px;height: 70px;font-size: 30px;margin: 5px;color: #fe5f55;" type="button" id="5" onclick="bloco(5);checa()"></th>
+            <th><input value="" style="background-color: #ffffff;border: 0;box-shadow: 1px 1px 10px #888888;width: 70px;height: 70px;font-size: 30px;margin: 5px;color: #fe5f55;" type="button" id="6" onclick="bloco(6);checa()"></th>
+          </tr>
+          
+          <tr>
+            <th><input value="" style="background-color: #ffffff;border: 0;box-shadow: 1px 1px 10px #888888;width: 70px;height: 70px;font-size: 30px;margin: 5px;color: #fe5f55;" type="button" id="7" onclick="bloco(7);checa()"></th>
+            <th><input value="" style="background-color: #ffffff;border: 0;box-shadow: 1px 1px 10px #888888;width: 70px;height: 70px;font-size: 30px;margin: 5px;color: #fe5f55;" type="button" id="8" onclick="bloco(8);checa()"></th>
+            <th><input value="" style="background-color: #ffffff;border: 0;box-shadow: 1px 1px 10px #888888;width: 70px;height: 70px;font-size: 30px;margin: 5px;color: #fe5f55;" type="button" id="9" onclick="bloco(9);checa()"></th>
+          </tr>
+      </table>
+
+      <br>
+
+			<input style="text-align: center;border: 0; box-shadow: 1px 1px 10px #888888;height: 20px;margin: 10px 20px;color: #fe5f55;" type="text" id="X" value="" placeholder="Player X">
+			<input type="button" style="background-color: #ffffff;border: 0;box-shadow:1px 1px 10px #888888;height:35px;font-size: 20px;color: #fe5f55;width: 70px;" value="reset" class="btn btn-success reset" id="apaga" onclick="apaga();">
+		  <input style="text-align: center;border: 0; box-shadow: 1px 1px 10px #888888;height: 20px;margin: 10px 20px;color: #fe5f55;" type="text" id="O" value="" placeholder="Player O">
+			</center>
+    
+  </body>
+</html>
